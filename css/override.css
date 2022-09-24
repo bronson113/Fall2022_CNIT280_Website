@@ -1,0 +1,110 @@
+hr {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Post navigation links */
+.post_navi {
+  display: flex;
+}
+
+.post_navi-label {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.post_navi .post_navi-item {
+  padding: 0 2.2em;
+  width: 50%;
+  position: relative;
+  color: inherit !important;
+}
+
+.post_navi .nav_prev {
+  text-align: left;
+}
+
+.post_navi .nav_next {
+  text-align: right;
+}
+
+.post_navi .nav_prev .post_navi-arrow {
+  left: 0;
+}
+
+.post_navi .nav_next .post_navi-arrow {
+  right: 0;
+}
+
+.post_navi .post_navi-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  opacity: 0.3;
+}
+
+.site-header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #f4f0f460;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.site-title, .site-title:hover, .site-title:focus, .site-title:active {
+    text-decoration: none;
+}
+
+.page-content {
+    margin-top: 40px;
+}
+.site-nav {
+    line-height:100%;
+}
+
+.trigger .page-link{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.trigger .page-link:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 95%;
+    left: 0;
+    right: 0;
+    bottom: -5%;
+    background: #333;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+.trigger .page-link:hover::before, .trigger .page-link:focus::before, .trigger .page-link:active::before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.svg-icon {
+    padding-right:0;
+}
