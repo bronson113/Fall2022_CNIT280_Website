@@ -1,1 +1,2 @@
-bundle exec jekyll serve --livereload
+#!/bin/bash
+python3 -m http.server
