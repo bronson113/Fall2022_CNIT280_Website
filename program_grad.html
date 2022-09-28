@@ -51,7 +51,7 @@ https://templatemo.com/tm-561-purple-buzz
         <div class="row pb-4">
             <div class="worksingle-comment-footer col-lg-8 m-auto">
                 <h4 class="h5">Select Time Period</h4>
-                <form class="col-md-12 m-auto" method="POST" action="#" role="form">
+                <form class="col-md-12 m-auto" role="form" onsubmit="generate_list();return false;">
 
                     <div class="row py-4">
                         <div class="col-lg-6">
@@ -92,13 +92,14 @@ https://templatemo.com/tm-561-purple-buzz
 
                     <div class="form-row pt-2">
                         <div class="col-md-12 col-10 text-end">
-                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Generate Report!</button>
+                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Generate List!</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div><!-- End Comment Form -->
 
+        <div id="result"></div>
     </section>
 
     <div id="footer"></div>
@@ -119,6 +120,14 @@ https://templatemo.com/tm-561-purple-buzz
             });
             // End Slide
         });
+
+        function generate_list(){
+            if (confirm("Do you want to generate THIS list?")) {
+              $("#result").load("program_grad_list.html");
+            } else {
+            }
+
+        }
     </script>
     <!-- Templatemo -->
     <script src="assets/js/templatemo.js"></script>
