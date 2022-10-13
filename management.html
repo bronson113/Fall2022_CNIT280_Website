@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SkyNet LLC - Work Detail Page</title>
+    <title>SkyNet LLC - Admin Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
@@ -26,117 +26,95 @@ https://templatemo.com/tm-561-purple-buzz
 </head>
 
 <body>
-
     <div id="header"></div>
 
     <!-- Start Banner Hero -->
-    <div id="work_single_banner" class="bg-light w-100">
-        <div class="container-fluid text-light d-flex justify-content-center align-items-center border-0 rounded-0 p-0 py-5">
-            <div class="banner-content col-lg-8 m-lg-auto text-center py-5 px-3">
-                <h1 class="banner-heading h2 pb-5 typo-space-line-center">Information Management Page</<h1>
-                </h1>
-                <h3 class="h4 pb-2 light-300">Voluptatem accusantium doloremque</h3>
-                <p class="banner-footer light-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Integer ut ipsum eu libero venenatis euismod.
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Management Panel</h1>
+                <h3 class="h4 pb-2 regular-400">This is the management panel!</h3>
+                <p class="banner-body pb-2 light-300">
+                        You can use this management panel to manage information in the database
                 </p>
+                <button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Learn More</button>
+                <button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300">Contact Us</button>
             </div>
         </div>
     </div>
     <!-- End Banner Hero -->
 
+    <!-- Start Our Work -->
     <section class="container py-5">
 
-        <div class="row pb-4">
-            <div class="worksingle-comment-footer col-lg-8 m-auto">
-                <form class="col-md-12 m-auto" role="form" onsubmit="new_entry();return false;">
-
-                    <div class="row py-4">
-                        <div class="col-lg-12">
-                            <label class="pb-2 light-300" for="inputoption">Select Option</label>
-                            <select type="select" class="form-control form-control-lg light-300" id="inputoption" name="inputparole" placeholder="Name">
-                              <option value="Client">New Client</option>
-                              <option value="Organization">New Organization</option>
-                            </select>
-                        </div>
+        <div class="row projects gx-lg-5">
+            <a href="management_add.html" class="col-sm-6 col-lg-4 text-decoration-none project report">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">New Entry</h5>
+                        <p class="card-text light-300 text-dark">
+                            Add new entry into the system
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Use this function <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
                     </div>
-
-                    <div class="row py-4">
-                        <div class="col-lg-6">
-                            <label class="pb-2 light-300" for="inputstartdate">Start Date</label>
-                            <input type="date" class="form-control form-control-lg light-300" id="inputstartdate" name="inputstartdate" placeholder="Name">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="pb-2 pt-sm-0 pt-4 light-300" for="inputenddate">End Date</label>
-                            <input type="date" class="form-control form-control-lg light-300" id="inputenddate" name="inputenddate" placeholder="Email">
-                        </div>
+                </div>
+            </a>
+            <a href="management_modify.html" class="col-sm-6 col-lg-4 text-decoration-none project list">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Modify Entry</h5>
+                        <p class="card-text light-300 text-dark">
+                              This List contain the lits of program graduates
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Use this function <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
                     </div>
-
-                    <div class="row py-4">
-                        <div class="col-lg-12">
-                            <label class="pb-2 light-300" for="inputparole">Select Parole Officer</label>
-                            <select type="select" class="form-control form-control-lg light-300" id="inputparole" name="inputparole" placeholder="Name">
-                              <option value="Officer1">Officer 1</option>
-                              <option value="Officer2">Officer 2</option>
-                              <option value="Officer3">Officer 3</option>
-                              <option value="Officer4">Officer 4</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="row py-4">
-                        <div class="col-lg-12">
-                            <label class="pb-2 pt-sm-0 pt-4 light-300" for="inputsort">Sorted By</label>
-                            <select type="select" class="form-control form-control-lg light-300" id="inputsort" name="inputsort" placeholder="Email">
-                              <option value="lastname">last name</option>
-                              <option value="type">type</option>
-                              <option value="court">court</option>
-                              <option value="school">school</option>
-                              <option value="judge">judge</option>
-                              <option value="probation">probation officer</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-row pt-2">
-                        <div class="col-md-12 col-10 text-end">
-                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Generate List!</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div><!-- End Comment Form -->
-
-        <div id="result"></div>
+                </div>
+            </a>
+        </div>
     </section>
+    <!-- End Our Work -->
+
 
     <div id="footer"></div>
 
 
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Load jQuery require for Page Script -->
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
     <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
     <script>
         $(window).load(function() {
-            // Slide
-            $('.templatemo-slide-link').click(function() {
-                var this_href = $(this).attr('href');
-                $('#templatemo-slide-link-target img').attr('src', this_href);
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
                 return false;
             });
-            // End Slide
         });
-
-        function new_entry(){
-            if ($('#inputoption').find(":selected").val()=="Client") {
-              $("#form").load("form_client.html");
-            } else {
-              $("#form").load("form_organization.html");
-            }
-        }
     </script>
     <!-- Templatemo -->
     <script src="assets/js/templatemo.js"></script>

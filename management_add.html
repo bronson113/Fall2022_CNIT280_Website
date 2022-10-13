@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SkyNet LLC - Work Detail Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <!-- Start Banner Hero -->
+    <div id="work_single_banner" class="bg-light w-100">
+        <div class="container-fluid text-light d-flex justify-content-center align-items-center border-0 rounded-0 p-0 py-5">
+            <div class="banner-content col-lg-8 m-lg-auto text-center py-5 px-3">
+                <h1 class="banner-heading h2 pb-5 typo-space-line-center">New Entry Page</<h1>
+                </h1>
+                <h3 class="h4 pb-2 light-300">Voluptatem accusantium doloremque</h3>
+                <p class="banner-footer light-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Integer ut ipsum eu libero venenatis euismod.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <section class="container py-5">
+
+        <div class="row pb-4">
+            <div class="worksingle-comment-footer col-lg-8 m-auto">
+                <form class="col-md-12 m-auto" role="form" onsubmit="new_entry();return false;">
+
+                    <div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputoption">Select Option</label>
+                            <select type="select" class="form-control form-control-lg light-300" id="inputoption" name="inputparole" placeholder="Name">
+                              <option value="Client">New Client</option>
+                              <option value="Organization">New Organization</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row pt-2">
+                        <div class="col-md-12 col-10 text-end">
+                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Confirm!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row pb-4" id="clientform">
+            <div class="worksingle-comment-footer col-lg-8 m-auto">
+                <form class="col-md-12 m-auto" role="form" onsubmit="client_form();return false;">
+
+                    <div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputclientname">Name:</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="inputstartdate" name="inputclientname" placeholder="Name">
+                        </div>
+                    </div>
+
+
+                    <div class="row py-4">
+                        <div class="col-lg-6">
+                            <label class="pb-2 light-300" for="inputclientstartdate">Start Date</label>
+                            <input type="date" class="form-control form-control-lg light-300" id="inputstartdate" name="inputclientstartdate" placeholder="Start Date">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="pb-2 pt-sm-0 pt-4 light-300" for="inputclientenddate">End Date</label>
+                            <input type="date" class="form-control form-control-lg light-300" id="inputenddate" name="inputclientenddate" placeholder="End Date">
+                        </div>
+                    </div>
+
+                    <div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputclientparole">Select Parole Officer</label>
+                            <select type="select" class="form-control form-control-lg light-300" id="inputparole" name="inputclientparole" placeholder="Name">
+                              <option value="Officer1">Officer 1</option>
+                              <option value="Officer2">Officer 2</option>
+                              <option value="Officer3">Officer 3</option>
+                              <option value="Officer4">Officer 4</option>
+                            </select>
+                        </div>
+                    </div>
+              
+
+                    <div class="form-row pt-2">
+                        <div class="col-md-12 col-10 text-end">
+                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Add Client!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+		</div>
+		<div class="row pb-4" id="orgform">
+            <div class="worksingle-comment-footer col-lg-8 m-auto">
+                <form class="col-md-12 m-auto" role="form" onsubmit="org_form();return false;">
+					<div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputorgname">Name:</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="inputorgname" name="inputorgname" placeholder="Name">
+                        </div>
+                    </div>
+
+
+                    <div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputparole">Select Parole Officer</label>
+                            <select type="select" class="form-control form-control-lg light-300" id="inputparole" name="inputparole" placeholder="Name">
+                              <option value="Officer1">Officer 1</option>
+                              <option value="Officer2">Officer 2</option>
+                              <option value="Officer3">Officer 3</option>
+                              <option value="Officer4">Officer 4</option>
+                            </select>
+                        </div>
+                    </div>
+                  
+
+                    <div class="form-row pt-2">
+                        <div class="col-md-12 col-10 text-end">
+                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Add Organization!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- End Comment Form -->
+
+        <div id="result_org">
+			<h3 class="h4 pb-2">Organization Successfully Added!</h3>
+		</div>
+		<div id="result_client">
+			<h3 class="h4 pb-2">Client Successfully Added!</h3>
+		</div>
+    </section>
+
+    <div id="footer"></div>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for Page Script -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // Slide
+            $('.templatemo-slide-link').click(function() {
+                var this_href = $(this).attr('href');
+                $('#templatemo-slide-link-target img').attr('src', this_href);
+                return false;
+            });
+            // End Slide
+
+            $("#clientform").hide();
+            $("#orgform").hide();
+			$("#result_org").hide();
+			$("#result_client").hide();
+        });
+
+        function new_entry(){
+			$("#result_org").hide();
+			$("#result_client").hide();
+            if ($('#inputoption').find(":selected").val()=="Client") {
+              $("#clientform").show();
+              $("#orgform").hide();
+            } else {
+              $("#clientform").hide();
+              $("#orgform").show();
+            }	
+        }
+		function org_form(){
+            if (confirm("Do you want to add this organization?")) {
+              $("#result_org").show();
+            } else {
+            }
+        }
+		function client_form(){
+            if (confirm("Do you want to add this client?")) {
+              $("#result_client").show();
+            } else {
+            }
+        }
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
