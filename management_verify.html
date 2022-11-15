@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SkyNet LLC - Verify Client Hour Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <!-- Start Banner Hero -->
+    <div id="work_single_banner" class="bg-light w-100">
+        <div class="container-fluid text-light d-flex justify-content-center align-items-center border-0 rounded-0 p-0 py-5">
+            <div class="banner-content col-lg-8 m-lg-auto text-center py-5 px-3">
+                <h1 class="banner-heading h2 pb-5 typo-space-line-center">Verify Client Hour Page</<h1>
+                </h1>
+                <h3 class="h4 pb-2 light-300">Voluptatem accusantium doloremque</h3>
+                <p class="banner-footer light-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Integer ut ipsum eu libero venenatis euismod.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <section class="container py-5">
+
+        <div class="row pb-4">
+            <div class="worksingle-comment-footer col-lg-8 m-auto">
+                <form class="col-md-12 m-auto" role="form" onsubmit="new_entry();return false;">
+
+                    <div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputoption">Select Client</label>
+                            <select type="select" class="form-control form-control-lg light-300" id="inputoption" name="inputparole" placeholder="Name">
+                              <option value="Client1">Client 1</option>
+							  <option value="Client2">Client 2</option>
+							  <option value="Client3">Client 3</option>
+							  <option value="Client4">Client 4</option>
+							  <option value="Client5">Client 5</option>
+                            </select>
+                        </div>
+                    </div>
+					<div class="row py-4">
+                        <div class="col-lg-12">
+                            <label class="pb-2 light-300" for="inputclientname">Hours</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="inputstartdate" name="inputclientname" placeholder="Name" value="10">
+                        </div>
+                    </div>
+                    <div class="form-row pt-2">
+                        <div class="col-md-12 col-10 text-end">
+                            <button type="submit" class="btn btn-secondary text-white px-md-4 px-2 py-md-3 py-1 radius-0 light-300">Confirm!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+		
+
+		<div id="result_client">
+			<div class="banner-content col-lg-8 m-lg-auto text-center py-5 px-3">
+				<h3 class="h4 pb-2">Client Hour Successfully Verified!</h3>
+			</div>
+		</div>
+    </section>
+
+    <div id="footer"></div>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for Page Script -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // Slide
+            $('.templatemo-slide-link').click(function() {
+                var this_href = $(this).attr('href');
+                $('#templatemo-slide-link-target img').attr('src', this_href);
+                return false;
+            });
+            // End Slide
+
+			$("#result_client").hide();
+        });
+
+		function new_entry(){
+            if (confirm("Do you want to verify client 1 for 10 hour?")) {
+              $("#result_client").show();
+            } else {
+			  $("#result_client").hide();
+            }
+        }
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
