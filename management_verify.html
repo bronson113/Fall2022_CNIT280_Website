@@ -67,7 +67,7 @@ https://templatemo.com/tm-561-purple-buzz
 					<div class="row py-4">
                         <div class="col-lg-12">
                             <label class="pb-2 light-300" for="inputclientname">Hours</label>
-                            <input type="text" class="form-control form-control-lg light-300" id="inputstartdate" name="inputclientname" placeholder="Name" value="10">
+                            <input type="number" class="form-control form-control-lg light-300" id="inputhours" name="inputhours" placeholder="Name" value="10">
                         </div>
                     </div>
                     <div class="form-row pt-2">
@@ -109,7 +109,8 @@ https://templatemo.com/tm-561-purple-buzz
         });
 
 		function new_entry(){
-            if (confirm("Do you want to verify client 1 for 10 hour?")) {
+            var hours = $('#inputhours').val();
+            if (confirm("Do you want to verify client 1 for "+hours.toString()+" hour?")) {
               $("#result_client").show();
             } else {
 			  $("#result_client").hide();
